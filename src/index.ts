@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 // eslint-disable-next-line import/newline-after-import
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv').config();
