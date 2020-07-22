@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon -w 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "build": "rimraf ./build && tsc",
-    "eslint": "eslint .",
+    "lint": "eslint .",
     "start": "node build/index.js",
     "test": "mocha -r ts-node/register \"tests/**/*.spec.ts\""
   },
