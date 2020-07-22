@@ -117,7 +117,7 @@ export default class OneLiner {
     return this.oneLiners[Math.floor(Math.random() * this.oneLiners.length)];
   }
 
-  public handle(message: Message): Promise<Message | Message[]> {
+  public async handle(message: Message): Promise<Message | Message[]> {
     if (this.trigger.isTrigger(message.content)) {
       return message.reply(this.randomOneLiner());
     }
