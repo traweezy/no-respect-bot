@@ -10,7 +10,7 @@ import Bot from './bot';
 const bot = container.get<Bot>(TYPES.Bot);
 
 bot
-  .listen()
+  .listen(process.env.PORT, '0.0.0.0')
   .then(() => {
     console.log('Logged in!');
   })
